@@ -3,6 +3,8 @@ import tensorgraph as tg
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
+    tg.Graph().as_default()
+
     X = tg.placeholder()
     c = tg.placeholder()
 
@@ -17,7 +19,7 @@ if __name__ == '__main__':
     W = tg.Variable(np.random.randn(2, 2))
     b = tg.Variable(np.random.randn(2))
 
-    # Build perceptron
+    # Build perception
     p = tg.softmax(tg.add(tg.matmul(X, W), b))
 
     # Build cross-entropy loss

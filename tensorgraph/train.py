@@ -1,6 +1,6 @@
-from TensorGraph.Operation import *
-from TensorGraph.Variable import *
-from TensorGraph.Gradients import _gradient_registry
+from tensorgraph.graph import Operation
+from tensorgraph.graph import Variable
+from tensorgraph.gradients import _gradient_registry
 
 
 class GradientDescentOptimizer:

@@ -1,5 +1,4 @@
-import numpy as np
-from TensorGraph.Operation import *
+from tensorgraph.operations import *
 
 # A dictionary that will map operations to gradient functions
 _gradient_registry = {}

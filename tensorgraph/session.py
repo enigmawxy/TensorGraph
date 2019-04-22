@@ -1,7 +1,7 @@
 import numpy as np
-from .Placeholder import Placeholder
-from .Operation import Operation
-from .Variable import Variable
+from tensorgraph.graph import placeholder
+from tensorgraph.graph import Operation
+from tensorgraph.graph import Variable
 
 
 class Session:
@@ -22,7 +22,7 @@ class Session:
         # Iterate all nodes to determine their value
         for node in nodes_postorder:
 
-            if type(node) == Placeholder:
+            if type(node) == placeholder:
                 # Set the node value to the placeholder value from feed_dict
                 node.output = feed_dict[node]
             elif type(node) == Variable:

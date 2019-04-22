@@ -1,10 +1,10 @@
-from TensorGraph.Session import *
-from TensorGraph.train import *
+import numpy as np
+import tensorgraph as tg
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    X = Placeholder()
-    c = Placeholder()
+    X = tg.placeholder()
+    c = tg.placeholder()
 
     # Create red points centered at (-2, -2)
     np.random.seed(0)
@@ -14,17 +14,17 @@ if __name__ == '__main__':
     blue_points = np.random.randn(50, 2) + 2 * np.ones((50, 2))
 
     # Initialize weights randomly
-    W = Variable(np.random.randn(2, 2))
-    b = Variable(np.random.randn(2))
+    W = tg.Variable(np.random.randn(2, 2))
+    b = tg.Variable(np.random.randn(2))
 
     # Build perceptron
-    p = softmax(add(matmul(X, W), b))
+    p = tg.softmax(tg.add(tg.matmul(X, W), b))
 
     # Build cross-entropy loss
-    J = negative(reduce_sum(reduce_sum(multiply(c, log(p)), axis=1)))
+    J = tg.negative(tg.reduce_sum(tg.reduce_sum(tg.multiply(c, tg.log(p)), axis=1)))
 
     # Build minimization op
-    minimization_op = GradientDescentOptimizer(learning_rate=0.01).minimize(J)
+    minimization_op = tg.train.GradientDescentOptimizer(learning_rate=0.01).minimize(J)
 
     # Build placeholder inputs
     feed_dict = {
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     }
 
     # Create session
-    session = Session()
+    session = tg.Session()
 
     # Perform 100 gradient descent steps
     for step in range(100):

@@ -1,6 +1,7 @@
 from tensorgraph.graph import Operation
 from tensorgraph.graph import Variable
 from tensorgraph.gradients import _gradient_registry
+from queue import Queue
 
 
 class GradientDescentOptimizer:
@@ -25,9 +26,6 @@ class GradientDescentOptimizer:
                         node.value -= learning_rate * grad
 
         return MinimizationOperation()
-
-
-from queue import Queue
 
 
 def compute_gradients(loss):

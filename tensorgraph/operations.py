@@ -52,13 +52,13 @@ class sigmoid(Operation):
     """Returns the sigmoid of x element-wise.
     """
 
-    def __init__(self, a):
+    def __init__(self, a, name=None):
         """Construct sigmoid
 
         Args:
           a: Input node
         """
-        super().__init__([a])
+        super().__init__([a], name)
 
     def compute(self, a_value):
         """Compute the output of the sigmoid operation
@@ -73,13 +73,13 @@ class softmax(Operation):
     """Returns the softmax of a.
     """
 
-    def __init__(self, a):
+    def __init__(self, a, name=None):
         """Construct softmax
 
         Args:
           a: Input node
         """
-        super().__init__([a])
+        super().__init__([a], name)
 
     def compute(self, a_value):
         """Compute the output of the softmax operation
@@ -94,13 +94,13 @@ class log(Operation):
     """Computes the natural logarithm of x element-wise.
     """
 
-    def __init__(self, x):
+    def __init__(self, x, name=None):
         """Construct log
 
         Args:
           x: Input node
         """
-        super().__init__([x])
+        super().__init__([x], name)
 
     def compute(self, x_value):
         """Compute the output of the log operation
@@ -115,14 +115,14 @@ class multiply(Operation):
     """Returns x * y element-wise.
     """
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, name=None):
         """Construct multiply
 
         Args:
           x: First multiplicand node
           y: Second multiplicand node
         """
-        super().__init__([x, y])
+        super().__init__([x, y], name)
 
     def compute(self, x_value, y_value):
         """Compute the output of the multiply operation
@@ -139,14 +139,14 @@ class reduce_sum(Operation):
     """Computes the sum of elements across dimensions of a tensor.
     """
 
-    def __init__(self, A, axis=None):
+    def __init__(self, A, axis=None, name=None):
         """Construct reduce_sum
 
         Args:
           A: The tensor to reduce.
           axis: The dimensions to reduce. If `None` (the default), reduces all dimensions.
         """
-        super().__init__([A])
+        super().__init__([A], name)
         self.axis = axis
 
     def compute(self, A_value):
@@ -162,13 +162,13 @@ class negative(Operation):
     """Computes the negative of x element-wise.
     """
 
-    def __init__(self, x):
+    def __init__(self, x, name=None):
         """Construct negative
 
         Args:
           x: Input node
         """
-        super().__init__([x])
+        super().__init__([x], name)
 
     def compute(self, x_value):
         """Compute the output of the negative operation

@@ -57,6 +57,8 @@ def traverse_postorder(operation):
         if isinstance(node, Operation):
             for input_node in node.input_nodes:
                 recurse(input_node)
+        if node.name is not None:
+            print(node.name)
         nodes_postorder.append(node)
 
     recurse(operation)

@@ -21,7 +21,8 @@ class Operation:
     as output.
     """
 
-    def __init__(self, input_nodes=None):
+    def __init__(self, input_nodes=None, name=None):
+        self.name = name
         """Construct Operation
         """
         if input_nodes is None:
@@ -49,12 +50,13 @@ class Variable:
     """Represents a variable (i.e. an intrinsic, changeable parameter of a computational graph).
     """
 
-    def __init__(self, initial_value=None):
+    def __init__(self, initial_value=None, name=None):
         """Construct Variable
 
         Args:
           initial_value: The initial value of this variable
         """
+        self.name = name
         self.value = initial_value
         self.consumers = []
 
@@ -67,9 +69,10 @@ class placeholder:
        when computing the output of a computational graph
     """
 
-    def __init__(self):
+    def __init__(self, name=None):
         """Construct placeholder
         """
+        self.name = name
         self.consumers = []
 
         # Append this placeholder to the list of placeholders in the currently active default graph

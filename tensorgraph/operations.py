@@ -6,14 +6,14 @@ class add(Operation):
     """Returns x + y element-wise.
     """
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, name=None):
         """Construct add
 
         Args:
           x: First summand node
           y: Second summand node
         """
-        super().__init__([x, y])
+        super().__init__([x, y], name)
 
     def compute(self, x_value, y_value):
         """Compute the output of the add operation
@@ -29,14 +29,14 @@ class matmul(Operation):
     """Multiplies matrix a by matrix b, producing a * b.
     """
 
-    def __init__(self, a, b):
+    def __init__(self, a, b, name=None):
         """Construct matmul
 
         Args:
           a: First matrix
           b: Second matrix
         """
-        super().__init__([a, b])
+        super().__init__([a, b], name)
 
     def compute(self, a_value, b_value):
         """Compute the output of the matmul operation

@@ -1,50 +1,50 @@
 # TensorGraph
-## A re-implementation of <a href="http://www.tensorflow.org">TensorFlow</a> functionality in pure python
+## 纯Python对<a href="http://www.tensorflow.org">TensorFlow</a>功能对重新实现
 
-TensorGraph is a minimalist machine learning API that mimicks the TensorFlow API, but is implemented in pure python (without a C backend). The source code has been built with maximal understandability in mind, rather than maximal efficiency. Therefore, TensorGraph should be used solely for educational purposes. If you want to understand how deep learning libraries like TensorFlow work under the hood, this may be your best shot. 
+TensorGraph是一个模仿TensorFlow API对小的机器学习API，使用纯Python实现，没有C. 代码实现考虑的是概念上的理解，而不是考虑功能实现的效率. 所以，只适用于学习的目的. 如果你想理解像TensorFlow这样的深度学习库的工作机制，这个项目是非常适合的. 
 
-I have written an article in my blog at <a href="http://www.deepideas.net/deep-learning-from-scratch-theory-and-implementation/">deepideas.net</a> that develops this library step by step, explaining all the math and algorithms on the way: <a href="http://www.deepideas.net/deep-learning-from-scratch-theory-and-implementation/">Deep Learning From Scratch</a>.
+我在CSDN上写了博客 <a href="http://www.csdn.net/">CSDN</a> 来讲述如何开始这个项目，可以浏览。
 
-## How to use
-Import:
+## 使用方法
+导入:
 
-    import TensorGraph as ts
+    import TensorGraph as tg
 
-Create a computational graph:
+创建计算图:
 
-    ts.Graph().as_default()
+    tg.Graph().as_default()
 
-Create input placeholders:
+创建输入占位符:
 
-    training_features = ts.placeholder()
-    training_classes = ts.placeholder()
+    training_features = tg.placeholder()
+    training_classes = tg.placeholder()
 
-Build a model:
+建一个神经网络结构:
 
-	weights = ts.Variable(np.random.randn(2, 2))
-	biases = ts.Variable(np.random.randn(2))
-	model = ts.softmax(ts.add(ts.matmul(X, W), b))
+	weightg = tg.Variable(np.random.randn(2, 2))
+	biases = tg.Variable(np.random.randn(2))
+	model = tg.softmax(tg.add(tg.matmul(X, W), b))
 
-Create training criterion:
+创建一个优化函数或者损失函数:
 
-    loss = ts.negative(ts.reduce_sum(ts.reduce_sum(ts.multiply(training_classes, ts.log(model)), axis=1)))
+    loss = tg.negative(tg.reduce_sum(tg.reduce_sum(tg.multiply(training_classes, tg.log(model)), axis=1)))
 
-Create optimizer:
+选择使用优化器:
 
-    optimizer = ts.train.GradientDescentOptimizer(learning_rate=0.01).minimize(J)
+    optimizer = tg.train.GradientDescentOptimizer(learning_rate=0.01).minimize(J)
 
-Create placeholder inputs:
+向输入占位符输入数据:
 
 	feed_dict = {
 		training_features: my_training_features,
 		training_classes: my_training_classes
 	}
 
-Create session:
+创建会话:
 
-	session = ts.Session()
+	session = tg.Session()
 
-Train:
+训练:
 
 	for step in range(100):
 		loss_value = session.run(loss, feed_dict)
@@ -52,9 +52,9 @@ Train:
 			print("Step:", step, " Loss:", loss_value)
 		session.run(optimizer, feed_dict)
 
-Retrieve model parameters:
+检索模型参数:
 
-	weights_value = session.run(weigths)
+	weightg_value = session.run(weigths)
 	biases_value = session.run(biases)
 
-Check out the `examples` directory for more.
+更多信息，参看`examples` 目录下的例子.

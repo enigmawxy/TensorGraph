@@ -11,10 +11,10 @@ if __name__ == '__main__':
     x = tg.placeholder(name='x')
 
     # Create hidden node y
-    y = tg.matmul(A, x, 'y')
+    y = tg.matmul(A, x, 'matmul')
 
     # Create output node z
-    z = tg.add(y, b, 'z')
+    z = tg.add(y, b, 'add')
 
     session = tg.Session()
     output = session.run(z, {

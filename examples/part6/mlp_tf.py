@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
+np.random.seed(10)
 # Create two clusters of red points centered at (0, 0) and (1, 1), respectively.
 red_points = np.concatenate((
     0.2*np.random.randn(25, 2) + np.array([[0, 0]]*25),
@@ -34,7 +35,7 @@ p_output = tf.nn.softmax( tf.add(tf.matmul(p_hidden, W_output), b_output) )
 J = tf.negative(tf.reduce_sum(tf.reduce_sum(tf.multiply(c, tf.log(p_output)), axis=1)))
 
 # Build minimization op
-minimization_op = tf.train.GradientDescentOptimizer(learning_rate = 0.01).minimize(J)
+minimization_op = tf.train.GradientDescentOptimizer(learning_rate=0.05).minimize(J)
 
 # Build placeholder inputs
 feed_dict = {
@@ -52,7 +53,7 @@ session = tf.Session()
 session.run(tf.global_variables_initializer())
 
 # Perform 1000 gradient descent steps
-for step in range(1000):
+for step in range(10000):
     J_value = session.run(J, feed_dict)
     if step % 100 == 0:
         print("Step:", step, " Loss:", J_value)

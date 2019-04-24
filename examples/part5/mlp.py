@@ -3,6 +3,7 @@ import tensorgraph as tg
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
+    np.random.seed(10)
     # Create two clusters of red points centered at (0, 0) and (1, 1), respectively.
     red_points = np.concatenate((
         0.2 * np.random.randn(25, 2) + np.array([[0, 0]] * 25),
@@ -16,13 +17,13 @@ if __name__ == '__main__':
     ))
 
     # Plot the red and blue points
-    # ax = plt.gca()
-    # ax.set_title('Scatter Dataset')
-    # ax.spines['right'].set_color('none')
-    # ax.spines['top'].set_color('none')
-    # plt.scatter(red_points[:,0], red_points[:,1], color='red')
-    # plt.scatter(blue_points[:,0], blue_points[:,1], color='blue')
-    # plt.show()
+    ax = plt.gca()
+    ax.set_title('Scatter Dataset')
+    ax.spines['right'].set_color('none')
+    ax.spines['top'].set_color('none')
+    plt.scatter(red_points[:,0], red_points[:,1], color='red')
+    plt.scatter(blue_points[:,0], blue_points[:,1], color='blue')
+    plt.show()
 
     # Create a new graph
     tg.Graph().as_default()
@@ -61,12 +62,17 @@ if __name__ == '__main__':
     # Create session
     session = tg.Session()
 
+    loss_list = []
     # Perform 100 gradient descent steps
-    for step in range(1000):
+    for step in range(10000):
         J_value = session.run(J, feed_dict)
+        loss_list.append(J_value)
         if step % 100 == 0:
             print("Step:", step, " Loss:", J_value)
         session.run(minimization_op, feed_dict)
+
+    plt.plot(loss_list)
+    plt.show()
 
     # Print final result
     W_hidden_value = session.run(W_hidden)

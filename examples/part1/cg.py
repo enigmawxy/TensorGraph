@@ -8,7 +8,7 @@ if __name__ == '__main__':
     b = tg.Variable([1, 1], 'b')
 
     # Create placeholder
-    x = tg.placeholder(name='x')
+    x = tg.Placeholder(name='x')
 
     # Create hidden node y
     y = tg.matmul(A, x, 'matmul')

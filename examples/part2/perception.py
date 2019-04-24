@@ -18,7 +18,7 @@ if __name__ == '__main__':
     # session = Session()
     # print(session.run(p, {x: [3, 2]}))
 
-    X = tg.placeholder(name='X')
+    X = tg.Placeholder(name='X')
 
     # Create a weight matrix for 2 output classes:
     # One with a weight vector (1, 1) for blue and one with a weight vector (-1, -1) for red

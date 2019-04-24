@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 if __name__ == '__main__':
     tg.Graph().as_default()
 
-    X = tg.placeholder()
-    c = tg.placeholder()
+    X = tg.Placeholder()
+    c = tg.Placeholder()
 
     # Create red points centered at (-2, -2)
     np.random.seed(0)

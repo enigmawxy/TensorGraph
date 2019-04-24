@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
     tg.Graph().as_default()
 
-    X = tg.placeholder()
-    c = tg.placeholder()
+    X = tg.Placeholder()
+    c = tg.Placeholder()
 
     W = tg.Variable([
         [1, -1],

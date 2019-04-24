@@ -28,9 +28,9 @@ class Session:
             else:  
                 node.inputs = [input_node.output for input_node in node.input_nodes]
                 node.output = node.compute(*node.inputs)
-                print("input: ", node.inputs)
 
-            print(type(node), node.output)
+            # print(type(node), node.output)
+
             if type(node.output) == list:
                 node.output = np.array(node.output)
 

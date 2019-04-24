@@ -1,5 +1,5 @@
 import numpy as np
-from tensorgraph.graph import placeholder
+from tensorgraph.graph import Placeholder
 from tensorgraph.graph import Operation
 from tensorgraph.graph import Variable
 
@@ -21,7 +21,7 @@ class Session:
 
         for node in nodes_post_order:
 
-            if type(node) == placeholder:
+            if type(node) == Placeholder:
                 node.output = feed_dict[node]
             elif type(node) == Variable:
                 node.output = node.value
@@ -52,8 +52,8 @@ def traverse_post_order(operation):
             for input_node in node.input_nodes:
                 recurse(input_node)
 
-        if node.name is not None:
-            print(node.name)
+        # if node.name is not None:
+        #     print(node.name)
 
         nodes_post_order.append(node)
 

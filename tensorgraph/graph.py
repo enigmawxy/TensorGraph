@@ -64,7 +64,7 @@ class Variable:
         _default_graph.variables.append(self)
 
 
-class placeholder:
+class Placeholder:
     """Represents a placeholder node that has to be provided with a value
        when computing the output of a computational graph
     """

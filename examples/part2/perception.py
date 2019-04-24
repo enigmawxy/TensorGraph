@@ -18,13 +18,13 @@ if __name__ == '__main__':
     # session = Session()
     # print(session.run(p, {x: [3, 2]}))
 
-    X = tg.placeholder()
+    X = tg.placeholder(name='X')
 
     # Create a weight matrix for 2 output classes:
     # One with a weight vector (1, 1) for blue and one with a weight vector (-1, -1) for red
-    W = tg.Variable([[1, -1], [1, -1]])
-    b = tg.Variable([0, 0])
-    p = tg.softmax(tg.add(tg.matmul(X, W), b))
+    W = tg.Variable([[1, -1], [1, -1]], 'W')
+    b = tg.Variable([0, 0], 'b')
+    p = tg.softmax(tg.add(tg.matmul(X, W, 'matmul'), b, 'add'), 'softmax')
 
     # Create a session and run the perceptron on our blue/red points
     session = tg.Session()

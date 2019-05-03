@@ -1,5 +1,5 @@
 # TensorGraph
-## 纯Python对<a href="http://www.tensorflow.org">TensorFlow</a>功能对重新实现
+## 纯Python对<a href="http://www.tensorflow.org">TensorFlow</a>功能的重新实现
 
 TensorGraph是一个模仿TensorFlow API对小的机器学习API，使用纯Python实现，没有C. 代码实现考虑的是概念上的理解，而不是考虑功能实现的效率. 所以，只适用于学习的目的. 如果你想理解像TensorFlow这样的深度学习库的工作机制，这个项目是非常适合的. 
 

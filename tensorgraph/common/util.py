@@ -2,20 +2,6 @@ import numpy as np
 
 
 def im2col(input_data, filter_h, filter_w, stride=1, pad=0):
-    """
-
-    Parameters
-    ----------
-    input_data : (データ数, チャンネル, 高さ, 幅)の4次元配列からなる入力データ
-    filter_h : フィルターの高さ
-    filter_w : フィルターの幅
-    stride : ストライド
-    pad : パディング
-
-    Returns
-    -------
-    col : 2次元配列
-    """
     N, C, H, W = input_data.shape
     out_h = (H + 2 * pad - filter_h) // stride + 1
     out_w = (W + 2 * pad - filter_w) // stride + 1
@@ -35,21 +21,6 @@ def im2col(input_data, filter_h, filter_w, stride=1, pad=0):
 
 
 def col2im(col, input_shape, filter_h, filter_w, stride=1, pad=0):
-    """
-
-    Parameters
-    ----------
-    col :
-    input_shape : 入力データの形状（例：(10, 1, 28, 28)）
-    filter_h :
-    filter_w
-    stride
-    pad
-
-    Returns
-    -------
-
-    """
     N, C, H, W = input_shape
     out_h = (H + 2 * pad - filter_h) // stride + 1
     out_w = (W + 2 * pad - filter_w) // stride + 1

@@ -2,19 +2,6 @@ import numpy as np
 
 
 def im2col(input_data, filter_h, filter_w, stride=1, pad=0):
-    """
-    Parameters
-    ----------
-    input_data : 由(数据量, 通道, 高, 长)的4维数组构成的输入数据
-    filter_h : 卷积核的高
-    filter_w : 卷积核的长
-    stride : 步幅
-    pad : 填充
-
-    Returns
-    -------
-    col : 2维数组
-    """
     # 输入数据的形状
     # N：批数目，C：通道数，H：输入数据高，W：输入数据长
     N, C, H, W = input_data.shape
@@ -43,4 +30,3 @@ x = np.arange(1, 16).reshape(1, 1, 3, 5)
 print('input:\n', x)
 print('filter:(3,3) stride: 1 pad: 0')
 im2col(x, 3, 3, 1, 0)
-

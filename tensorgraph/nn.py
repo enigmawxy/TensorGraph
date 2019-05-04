@@ -1,13 +1,31 @@
 import numpy as np
 from tensorgraph.graph import Operation
-from tensorgraph.common.util import im2col
+
+
+def im2col(input_data, filter_h, filter_w, stride=1, pad=0):
+    N, C, H, W = input_data.shape
+    out_h = (H + 2 * pad - filter_h) // stride + 1
+    out_w = (W + 2 * pad - filter_w) // stride + 1
+
+    img = np.pad(input_data, [(0, 0), (0, 0), (pad, pad), (pad, pad)], 'constant')
+    col = np.zeros((N, C, filter_h, filter_w, out_h, out_w))
+
+    for y in range(filter_h):
+        y_max = y + stride * out_h
+        for x in range(filter_w):
+            x_max = x + stride * out_w
+            col[:, :, y, x, :, :] = img[:, :, y:y_max:stride, x:x_max:stride]
+
+    col = col.transpose(0, 4, 5, 1, 2, 3).reshape(N * out_h * out_w, -1)
+
+    return col
 
 
 class con2d(Operation):
     """Multiplies matrix a by matrix b, producing a * b.
     """
 
-    def __init__(self, x, w, b, strides=None, padding='SAME', name=None):
+    def __init__(self, x, w, b, strides=None, padding=0, name=None):
         super().__init__([x, w, b], name)
         if strides is None:
             self.strides = [1, 1, 1, 1]
@@ -28,10 +46,10 @@ class con2d(Operation):
 
         FN, C, FH, FW = w_value.shape
         N, C, H, W = x_value.shape
-        out_h = 1 + int((H + 2 * self.pad - FH) / self.strides)
-        out_w = 1 + int((W + 2 * self.pad - FW) / self.strides)
+        out_h = 1 + int((H + 2 * self.pad - FH) / self.strides[1])
+        out_w = 1 + int((W + 2 * self.pad - FW) / self.strides[2])
 
-        col = im2col(x_value, FH, FW, self.strides, self.pad)
+        col = im2col(x_value, FH, FW, self.strides[0], self.pad)
         col_W = w_value.reshape(FN, -1).T
 
         out = np.dot(col, col_W) + b_value

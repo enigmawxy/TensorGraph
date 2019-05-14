@@ -2,6 +2,25 @@ import numpy as np
 from tensorgraph.graph import Operation
 
 
+def conv_forward_tensordot(x, w, b, s):
+    # x = self.padding(x)   # 根据需要进行padding处理
+    x_split = split_by_strides(x, w.shape[0], w.shape[1], s)
+    return np.tensordot(x_split, w, axes=[(3, 4, 5), (0, 1, 2)]) + b
+
+
+def split_by_strides(input_data, filter_h, filter_w, stride=1):
+    N, H, W, C = input_data.shape
+    oh = (H - filter_h) // stride + 1
+    ow = (W - filter_w) // stride + 1
+
+    shape = (N, oh, ow, filter_h, filter_w, C)
+
+    strides = (input_data.strides[0], input_data.strides[1] * stride,
+               input_data.strides[2] * stride, *input_data.strides[1:])
+
+    return np.lib.stride_tricks.as_strided(input_data, shape=shape, strides=strides)
+
+
 def im2col(input_data, filter_h, filter_w, stride=1, pad=None):
     """
     Parameters

@@ -2,13 +2,28 @@ import numpy as np
 from tensorgraph.graph import Operation
 
 
-def conv_forward_tensordot(x, w, b, s):
+def conv_forward_tensordot(input_data, w, b, s):
+    """
+    :param input_data: (N, H, W, C) 分别是  批数，高，宽，通道数
+    :param w: (kh, kw, C, kn) 分别是卷积核的 高, 宽, 通道数, 核数
+    :param b:
+    :param s:
+    :return:
+    """
     # x = self.padding(x)   # 根据需要进行padding处理
-    x_split = split_by_strides(x, w.shape[0], w.shape[1], s)
+    x_split = split_by_strides(input_data, w.shape[0], w.shape[1], s)
     return np.tensordot(x_split, w, axes=[(3, 4, 5), (0, 1, 2)]) + b
 
 
 def split_by_strides(input_data, filter_h, filter_w, stride=1):
+    """
+
+    :param input_data: N, H, W, C
+    :param filter_h:
+    :param filter_w:
+    :param stride:
+    :return:
+    """
     N, H, W, C = input_data.shape
     oh = (H - filter_h) // stride + 1
     ow = (W - filter_w) // stride + 1

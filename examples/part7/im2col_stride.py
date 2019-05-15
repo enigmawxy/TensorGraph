@@ -14,7 +14,6 @@ def relu(x):
 
 # N, H, W, C = x.shape            # 分别是批数，高，宽，通道数
 # kh, kw, C, kn = filters.shape   # 分别是卷积核的宽，高，通道数，核数
-
 seqs = np.zeros([n] + [h, w] + [3])
 
 w = 0.01 * np.random.randn(3, 3, 3, 1)

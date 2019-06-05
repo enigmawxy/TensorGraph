@@ -15,14 +15,16 @@ class add(Operation):
         """
         super().__init__([x, y], name)
 
-    def compute(self, x_value, y_value):
+    def compute(self):
         """Compute the output of the add operation
 
         Args:
           x_value: First summand value
           y_value: Second summand value
         """
-        return x_value + y_value
+        x_value, y_value = self.input_nodes
+
+        return x_value.output + y_value.output
 
 
 class matmul(Operation):
@@ -38,14 +40,16 @@ class matmul(Operation):
         """
         super().__init__([a, b], name)
 
-    def compute(self, a_value, b_value):
+    def compute(self):
         """Compute the output of the matmul operation
 
         Args:
           a_value: First matrix value
           b_value: Second matrix value
         """
-        return a_value.dot(b_value)
+        a_value, b_value = self.input_nodes
+
+        return a_value.output.dot(b_value.output)
 
 
 class sigmoid(Operation):

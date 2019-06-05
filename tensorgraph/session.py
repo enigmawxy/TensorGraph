@@ -27,10 +27,12 @@ class Session:
                 node.output = node.value
             else:  
                 node.inputs = [input_node.output for input_node in node.input_nodes]
-                node.output = node.compute(*node.inputs)
-                # print(type(node), node.output)
 
-            # print(type(node), node.output)
+                # changed to call compute() method
+                # node.output = node.compute(*node.inputs)
+                node.output = node.compute()
+
+            # print(type(node), node.output, node.name)
 
             if type(node.output) == list:
                 node.output = np.array(node.output)

@@ -3,6 +3,7 @@
 
 from tensorgraph.graph import *
 from tensorgraph.operations import *
+from tensorgraph.perception import *
 from tensorgraph.gradients import RegisterGradient
 from tensorgraph.session import Session
 import tensorgraph.train

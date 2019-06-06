@@ -17,10 +17,6 @@ class add(Operation):
 
     def compute(self):
         """Compute the output of the add operation
-
-        Args:
-          x_value: First summand value
-          y_value: Second summand value
         """
         x_value, y_value = self.input_nodes
 
@@ -44,10 +40,6 @@ class matmul(Operation):
 
     def compute(self):
         """Compute the output of the matmul operation
-
-        Args:
-          a_value: First matrix value
-          b_value: Second matrix value
         """
         a_value, b_value = self.input_nodes
 
@@ -70,13 +62,33 @@ class softmax(Operation):
 
     def compute(self):
         """Compute the output of the softmax operation
-
-        Args:
-          a_value: Input value
         """
         a = self.input_nodes
 
         self.output_value = np.exp(a[0].output_value) / np.sum(np.exp(a[0].output_value), axis=1)[:, None]
+
+        return self.output_value
+
+
+class negative(Operation):
+    """Computes the negative of x element-wise.
+    """
+
+    def __init__(self, x, name=None):
+        """Construct negative
+
+        Args:
+          x: Input node
+        """
+        super(self.__class__, self).__init__(x, name=name)
+
+    def compute(self):
+        """Compute the output of the negative operation
+        """
+
+        x_value = self.input_nodes
+
+        self.output_value = -x_value[0].output_value
 
         return self.output_value
 
@@ -93,13 +105,11 @@ class sigmoid(Operation):
         """
         super().__init__([a], name)
 
-    def compute(self, a_value):
+    def compute(self):
         """Compute the output of the sigmoid operation
-
-        Args:
-          a_value: Input value
         """
-        return 1 / (1 + np.exp(-a_value))
+        a_value = self.input_nodes
+        return 1 / (1 + np.exp(-a_value.output_value))
 
 
 class log(Operation):
@@ -112,15 +122,20 @@ class log(Operation):
         Args:
           x: Input node
         """
-        super().__init__([x], name)
+        super(self.__class__, self).__init__(x, name=name)
 
-    def compute(self, x_value):
+    def compute(self):
         """Compute the output of the log operation
 
         Args:
           x_value: Input value
         """
-        return np.log(x_value)
+        # return np.log(x_value)
+
+        x, = self.input_nodes
+        self.output_value = np.log(x.output_value)
+
+        return self.output_value
 
 
 class multiply(Operation):
@@ -134,59 +149,39 @@ class multiply(Operation):
           x: First multiplicand node
           y: Second multiplicand node
         """
-        super().__init__([x, y], name)
+        super(self.__class__, self).__init__(x, y, name=name)
 
-    def compute(self, x_value, y_value):
+    def compute(self):
         """Compute the output of the multiply operation
 
         Args:
           x_value: First multiplicand value
           y_value: Second multiplicand value
         """
+        x, y = self.input_nodes
+        self.output_value = np.multiply(x.output_value, y.output_value)
 
-        return x_value * y_value
+        return self.output_value
 
 
 class reduce_sum(Operation):
     """Computes the sum of elements across dimensions of a tensor.
     """
 
-    def __init__(self, A, axis=None, name=None):
+    def __init__(self, x, axis=None, name=None):
         """Construct reduce_sum
 
         Args:
           A: The tensor to reduce.
           axis: The dimensions to reduce. If `None` (the default), reduces all dimensions.
         """
-        super().__init__([A], name)
+        super(self.__class__, self).__init__(x)
         self.axis = axis
 
-    def compute(self, A_value):
+    def compute(self):
         """Compute the output of the reduce_sum operation
-
-        Args:
-          A_value: Input tensor value
         """
-        return np.sum(A_value, self.axis)
+        x, = self.input_nodes
+        self.output_value = np.sum(x.output_value, self.axis)
 
-
-class negative(Operation):
-    """Computes the negative of x element-wise.
-    """
-
-    def __init__(self, x, name=None):
-        """Construct negative
-
-        Args:
-          x: Input node
-        """
-        super().__init__([x], name)
-
-    def compute(self, x_value):
-        """Compute the output of the negative operation
-
-        Args:
-          x_value: Input value
-        """
-        return -x_value
-
+        return self.output_value

@@ -103,7 +103,7 @@ class sigmoid(Operation):
         Args:
           a: Input node
         """
-        super().__init__([a], name)
+        super(self.__class__, self).__init__(a, name=name)
 
     def compute(self):
         """Compute the output of the sigmoid operation

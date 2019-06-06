@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e016fdba-0691-42fb-b870-be59df33b4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorgraph/nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/nn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorgraph/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorgraph/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorgraph/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/session.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,47 +15,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/part7/im2col_stride.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/part7/conv_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tensorgraph/nn.py">
+        <entry file="file://$PROJECT_DIR$/tensorgraph/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="340">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/part7/im2col_test.py">
+        <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="179">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorgraph/operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="1216">
+              <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -71,10 +52,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
+        <entry file="file://$PROJECT_DIR$/tensorgraph/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="53">
+              <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -121,7 +102,6 @@
         <option value="$PROJECT_DIR$/TensorGraph/graph.py" />
         <option value="$PROJECT_DIR$/TensorGraph/Placeholder.py" />
         <option value="$PROJECT_DIR$/TensorGraph/placeholder.py" />
-        <option value="$PROJECT_DIR$/tensorgraph/operations.py" />
         <option value="$PROJECT_DIR$/tensorgraph/placeholder.py" />
         <option value="$PROJECT_DIR$/examples/part4/test_grad.py" />
         <option value="$PROJECT_DIR$/examples/part3/test_criterion.py" />
@@ -129,14 +109,10 @@
         <option value="$PROJECT_DIR$/tensorgraph/train.py" />
         <option value="$PROJECT_DIR$/README-CN.md" />
         <option value="$PROJECT_DIR$/tensorgraph/gradients.py" />
-        <option value="$PROJECT_DIR$/tensorgraph/graph.py" />
-        <option value="$PROJECT_DIR$/examples/part1/cg.py" />
-        <option value="$PROJECT_DIR$/examples/part2/perception.py" />
         <option value="$PROJECT_DIR$/examples/part3/loss.py" />
         <option value="$PROJECT_DIR$/examples/part4/mlp.py" />
         <option value="$PROJECT_DIR$/examples/part6/mlp_tf.py" />
         <option value="$PROJECT_DIR$/examples/part5/mlp.py" />
-        <option value="$PROJECT_DIR$/tensorgraph/session.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tensorgraph/common/cutil.py" />
         <option value="$PROJECT_DIR$/tensorgraph/common/setup.py" />
@@ -147,23 +123,27 @@
         <option value="$PROJECT_DIR$/tensorgraph/__init__.py" />
         <option value="$PROJECT_DIR$/examples/part7/conv_test.py" />
         <option value="$PROJECT_DIR$/examples/part7/im2col_test.py" />
-        <option value="$PROJECT_DIR$/examples/part7/im2col_stride.py" />
         <option value="$PROJECT_DIR$/tensorgraph/nn.py" />
+        <option value="$PROJECT_DIR$/examples/part7/im2col_stride.py" />
+        <option value="$PROJECT_DIR$/tensorgraph/graph.py" />
+        <option value="$PROJECT_DIR$/examples/part1/cg.py" />
+        <option value="$PROJECT_DIR$/examples/part2/perception.py" />
+        <option value="$PROJECT_DIR$/tensorgraph/operations.py" />
+        <option value="$PROJECT_DIR$/tensorgraph/session.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="289" />
-    <option name="y" value="25" />
+    <option name="x" value="243" />
+    <option name="y" value="42" />
     <option name="width" value="1414" />
-    <option name="height" value="925" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,24 +160,27 @@
               <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="part7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="part7" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
               <item name="tensorgraph" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (tfenv) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,8 +215,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.im2col_stride">
-    <configuration name="conv_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.perception">
+    <configuration name="cg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,12 +224,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part7/conv_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part1/cg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,51 +238,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="im2col_stride" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TensorGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part7/im2col_stride.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="im2col_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TensorGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part7/im2col_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="nn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -312,7 +251,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorgraph/nn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorgraph/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,7 +260,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nn_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="operations" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,12 +268,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorgraph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part7/nn_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorgraph/operations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="perception" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TensorGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/part2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/part2/perception.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TensorGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorgraph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorgraph/session.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.im2col_stride" />
-        <item itemvalue="Python.conv_test" />
-        <item itemvalue="Python.im2col_test" />
-        <item itemvalue="Python.nn" />
-        <item itemvalue="Python.nn_test" />
+        <item itemvalue="Python.perception" />
+        <item itemvalue="Python.operations" />
+        <item itemvalue="Python.cg" />
+        <item itemvalue="Python.session" />
+        <item itemvalue="Python.graph" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +361,10 @@
       <workItem from="1557019594239" duration="771000" />
       <workItem from="1557381940639" duration="884000" />
       <workItem from="1557796555905" duration="15728000" />
-      <workItem from="1557889642724" duration="370000" />
+      <workItem from="1557889642724" duration="865000" />
+      <workItem from="1559551978594" duration="543000" />
+      <workItem from="1559719854904" duration="5206000" />
+      <workItem from="1559780072159" duration="6586000" />
     </task>
     <task id="LOCAL-00001" summary="modified">
       <created>1555937049223</created>
@@ -450,11 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556854115695</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refined">
+      <created>1559725136877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559725136878</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74157000" />
+    <option name="totallyTimeSpent" value="86987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,16 +459,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="289" y="25" width="1414" height="925" extended-state="0" />
+    <frame x="243" y="42" width="1414" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22521865" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1793003" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294423" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16666667" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.50864196" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27078384" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34441805" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
@@ -519,10 +512,14 @@
     <SUITE FILE_PATH="coverage/TensorGraph$train.coverage" NAME="train Coverage Results" MODIFIED="1555999794249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
     <SUITE FILE_PATH="coverage/TensorGraph$mlp__1_.coverage" NAME="mlp (1) Coverage Results" MODIFIED="1556090368380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part5" />
     <SUITE FILE_PATH="coverage/TensorGraph$test_criterion__1_.coverage" NAME="test_criterion (1) Coverage Results" MODIFIED="1556085199336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part3" />
+    <SUITE FILE_PATH="coverage/TensorGraph$cg.coverage" NAME="cg Coverage Results" MODIFIED="1559786036484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part1" />
     <SUITE FILE_PATH="coverage/TensorGraph$nn.coverage" NAME="nn Coverage Results" MODIFIED="1556889749614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
+    <SUITE FILE_PATH="coverage/TensorGraph$session.coverage" NAME="session Coverage Results" MODIFIED="1559721891777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
+    <SUITE FILE_PATH="coverage/TensorGraph$operations.coverage" NAME="operations Coverage Results" MODIFIED="1559787943596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
     <SUITE FILE_PATH="coverage/TensorGraph$mlp_tf.coverage" NAME="mlp_tf Coverage Results" MODIFIED="1556088732846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part6" />
-    <SUITE FILE_PATH="coverage/TensorGraph$perception.coverage" NAME="perception Coverage Results" MODIFIED="1556065504087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
+    <SUITE FILE_PATH="coverage/TensorGraph$graph.coverage" NAME="graph Coverage Results" MODIFIED="1559720231826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
     <SUITE FILE_PATH="coverage/TensorGraph$setup.coverage" NAME="setup Coverage Results" MODIFIED="1556875401730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph/common" />
+    <SUITE FILE_PATH="coverage/TensorGraph$perception.coverage" NAME="perception Coverage Results" MODIFIED="1559788410553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/part1/__init__.py" />
@@ -540,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -557,13 +544,6 @@
             <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part1/cg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -578,16 +558,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Robot/tfenv/lib/python3.7/site-packages/tensorflow/_api/v1/nn/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tensorgraph/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/build/temp.macosx-10.14-x86_64-3.7/cutil.o" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/tensorgraph/common/cutil.so" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/c_util.so" />
@@ -598,28 +568,11 @@
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/cutil.pyx" />
     <entry file="file://$PROJECT_DIR$/examples/part7/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tensorgraph/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/892252037/numpy/random/mtrand.py" />
     <entry file="file://$PROJECT_DIR$/examples/part4/grad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="910">
           <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -676,10 +629,37 @@
     <entry file="file://$PROJECT_DIR$/examples/part7/images/A01.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/part7/im2col_stride.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/part7/conv_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -693,39 +673,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/operations.py">
+    <entry file="file://$PROJECT_DIR$/tensorgraph/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part7/im2col_stride.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="96">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/part1/cg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+          <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

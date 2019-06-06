@@ -1,7 +1,5 @@
-import numpy as np
-from tensorgraph.graph import Placeholder
 from tensorgraph.graph import Operation
-from tensorgraph.graph import Variable
+from tensorgraph.graph import Placeholder
 
 
 class Session:
@@ -22,22 +20,11 @@ class Session:
         for node in nodes_post_order:
 
             if type(node) == Placeholder:
-                node.output = feed_dict[node]
-            elif type(node) == Variable:
-                node.output = node.value
-            else:  
-                node.inputs = [input_node.output for input_node in node.input_nodes]
+                node.output_value = feed_dict[node]
+            else:
+                node.compute()
 
-                # changed to call compute() method
-                # node.output = node.compute(*node.inputs)
-                node.output = node.compute()
-
-            # print(type(node), node.output, node.name)
-
-            if type(node.output) == list:
-                node.output = np.array(node.output)
-
-        return operation.output
+        return operation.output_value
 
 
 def traverse_post_order(operation):

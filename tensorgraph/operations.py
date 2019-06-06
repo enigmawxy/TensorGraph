@@ -13,7 +13,7 @@ class add(Operation):
           x: First summand node
           y: Second summand node
         """
-        super().__init__([x, y], name)
+        super(self.__class__, self).__init__(x, y, name=name)
 
     def compute(self):
         """Compute the output of the add operation
@@ -24,7 +24,9 @@ class add(Operation):
         """
         x_value, y_value = self.input_nodes
 
-        return x_value.output + y_value.output
+        self.output_value = np.add(x_value.output_value, y_value.output_value)
+
+        return self.output_value
 
 
 class matmul(Operation):
@@ -38,7 +40,7 @@ class matmul(Operation):
           a: First matrix
           b: Second matrix
         """
-        super().__init__([a, b], name)
+        super(self.__class__, self).__init__(a, b, name=name)
 
     def compute(self):
         """Compute the output of the matmul operation
@@ -49,7 +51,34 @@ class matmul(Operation):
         """
         a_value, b_value = self.input_nodes
 
-        return a_value.output.dot(b_value.output)
+        self.output_value = np.dot(a_value.output_value, b_value.output_value)
+
+        return self.output_value
+
+
+class softmax(Operation):
+    """Returns the softmax of a.
+    """
+
+    def __init__(self, a, name=None):
+        """Construct softmax
+
+        Args:
+          a: Input node
+        """
+        super(self.__class__, self).__init__(a, name=name)
+
+    def compute(self):
+        """Compute the output of the softmax operation
+
+        Args:
+          a_value: Input value
+        """
+        a = self.input_nodes
+
+        self.output_value = np.exp(a[0].output_value) / np.sum(np.exp(a[0].output_value), axis=1)[:, None]
+
+        return self.output_value
 
 
 class sigmoid(Operation):
@@ -71,27 +100,6 @@ class sigmoid(Operation):
           a_value: Input value
         """
         return 1 / (1 + np.exp(-a_value))
-
-
-class softmax(Operation):
-    """Returns the softmax of a.
-    """
-
-    def __init__(self, a, name=None):
-        """Construct softmax
-
-        Args:
-          a: Input node
-        """
-        super().__init__([a], name)
-
-    def compute(self, a_value):
-        """Compute the output of the softmax operation
-
-        Args:
-          a_value: Input value
-        """
-        return np.exp(a_value) / np.sum(np.exp(a_value), axis=1)[:, None]
 
 
 class log(Operation):

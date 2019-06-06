@@ -21,16 +21,16 @@ class Operation:
     as output.
     """
 
-    def __init__(self, input_nodes=None, name=None):
+    def __init__(self, *input_nodes, name=None):
         self.name = name
         """Construct Operation
         """
-        if input_nodes is None:
-            input_nodes = []
         self.input_nodes = input_nodes
 
         # Initialize list of consumers (i.e. nodes that receive this operation's output as input)
         self.consumers = []
+
+        self.output_value = None
 
         # Append this operation to the list of consumers of all input nodes
         for input_node in input_nodes:
@@ -43,7 +43,7 @@ class Operation:
         """Computes the output of this operation.
         "" Must be implemented by the particular operation.
         """
-        pass
+        raise NotImplementedError
 
 
 class Variable:
@@ -59,9 +59,17 @@ class Variable:
         self.name = name
         self.value = initial_value
         self.consumers = []
-
+        self.output_value = None
         # Append this variable to the list of variables in the currently active default graph
         _default_graph.variables.append(self)
+
+    def compute(self):
+        """Computes the output of this operation.
+        "" Must be implemented by the particular operation.
+        """
+        if self.output_value is None:
+            self.output_value = self.value
+        return self.output_value
 
 
 class Placeholder:
@@ -74,6 +82,6 @@ class Placeholder:
         """
         self.name = name
         self.consumers = []
-
+        self.output_value = None
         # Append this placeholder to the list of placeholders in the currently active default graph
         _default_graph.placeholders.append(self)

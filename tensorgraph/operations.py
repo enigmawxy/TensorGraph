@@ -109,7 +109,10 @@ class sigmoid(Operation):
         """Compute the output of the sigmoid operation
         """
         a_value = self.input_nodes
-        return 1 / (1 + np.exp(-a_value.output_value))
+
+        self.output_value = 1 / (1 + np.exp(-a_value[0].output_value))
+
+        return self.output_value
 
 
 class log(Operation):

@@ -10,12 +10,12 @@ if __name__ == '__main__':
 
     tg.Graph().as_default()
 
-    # x = Placeholder()
-    # w = Variable([1, 1])
-    # b = Variable(0)
-    # p = sigmoid(add(matmul(w, x), b))
+    # x = tg.Placeholder()
+    # w = tg.Variable([1, 1])
+    # b = tg.Variable(0)
+    # p = tg.sigmoid(tg.add(tg.matmul(w, x), b))
     #
-    # session = Session()
+    # session = tg.Session()
     # print(session.run(p, {x: [3, 2]}))
 
     X = tg.Placeholder(name='X')

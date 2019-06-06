@@ -153,6 +153,7 @@ def _reduce_sum_gradient(op, grad):
     Returns:
       Gradients with respect to the input of `reduce_sum`.
     """
+    print(type(op), op)
     A = op.inputs[0]
 
     output_shape = np.array(A.shape)

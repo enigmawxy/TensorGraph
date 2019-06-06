@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e016fdba-0691-42fb-b870-be59df33b4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/examples/part2/perception.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/part2/perception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TensorGraph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TensorGraph.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tensorgraph/gradients.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/gradients.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorgraph/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorgraph/operations.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/part4/grad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+            <state relative-caret-position="65">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -26,11 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1417">
-              <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+            <state relative-caret-position="468">
+              <caret line="167" column="33" lean-forward="true" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="336">
+                <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -38,35 +51,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorgraph/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+            <state relative-caret-position="467">
+              <caret line="93" column="21" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorgraph/session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README-EN.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="77">
+                <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -74,10 +75,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorgraph/operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="488">
+              <caret line="96" column="45" lean-forward="true" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/part3/loss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +142,6 @@
         <option value="$PROJECT_DIR$/examples/part4/test_grad.py" />
         <option value="$PROJECT_DIR$/examples/part3/test_criterion.py" />
         <option value="$PROJECT_DIR$/examples/part1/test_graph.py" />
-        <option value="$PROJECT_DIR$/tensorgraph/train.py" />
         <option value="$PROJECT_DIR$/README-CN.md" />
         <option value="$PROJECT_DIR$/examples/part4/mlp.py" />
         <option value="$PROJECT_DIR$/examples/part6/mlp_tf.py" />
@@ -152,9 +164,10 @@
         <option value="$PROJECT_DIR$/tensorgraph/__init__.py" />
         <option value="$PROJECT_DIR$/tensorgraph/perception.py" />
         <option value="$PROJECT_DIR$/examples/part2/perceptron.py" />
-        <option value="$PROJECT_DIR$/tensorgraph/gradients.py" />
         <option value="$PROJECT_DIR$/tensorgraph/operations.py" />
         <option value="$PROJECT_DIR$/examples/part2/perception.py" />
+        <option value="$PROJECT_DIR$/tensorgraph/train.py" />
+        <option value="$PROJECT_DIR$/tensorgraph/gradients.py" />
       </list>
     </option>
   </component>
@@ -185,27 +198,12 @@
               <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="part3" type="462c0819:PsiDirectoryNode" />
+              <item name="part4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorGraph" type="462c0819:PsiDirectoryNode" />
               <item name="tensorgraph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="TensorGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (tfenv) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -247,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.perception">
+  <component name="RunManager" selected="Python.grad">
     <configuration name="grad" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -360,9 +358,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.perception" />
         <item itemvalue="Python.grad" />
         <item itemvalue="Python.loss" />
+        <item itemvalue="Python.perception" />
         <item itemvalue="Python.perceptron" />
         <item itemvalue="Python.operations" />
       </list>
@@ -397,6 +395,7 @@
       <workItem from="1559551978594" duration="543000" />
       <workItem from="1559719854904" duration="5206000" />
       <workItem from="1559780072159" duration="16907000" />
+      <workItem from="1559826117061" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="modified">
       <created>1555937049223</created>
@@ -493,7 +492,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97308000" />
+    <option name="totallyTimeSpent" value="98927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,14 +505,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="206" y="51" width="1632" height="927" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14339623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14528301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294423" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37192118" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38793105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40270936" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,10 +523,11 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.23522167" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32988507" />
       <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="JuliaSciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.4062893" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.4062893" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -545,30 +544,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="refined" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TensorGraph$mlp.coverage" NAME="mlp Coverage Results" MODIFIED="1556001100941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part4" />
-    <SUITE FILE_PATH="coverage/TensorGraph$test_grad.coverage" NAME="test_grad Coverage Results" MODIFIED="1555926536632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part4" />
-    <SUITE FILE_PATH="coverage/TensorGraph$TestGraph.coverage" NAME="TestGraph Coverage Results" MODIFIED="1555899317133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1" />
+    <SUITE FILE_PATH="coverage/TensorGraph$perception.coverage" NAME="perception Coverage Results" MODIFIED="1559808685319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
     <SUITE FILE_PATH="coverage/TensorGraph$test_criterion.coverage" NAME="test_criterion Coverage Results" MODIFIED="1555925369273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part3" />
-    <SUITE FILE_PATH="coverage/TensorGraph$conv_test.coverage" NAME="conv_test Coverage Results" MODIFIED="1556963792448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
-    <SUITE FILE_PATH="coverage/TensorGraph$im2col_stride.coverage" NAME="im2col_stride Coverage Results" MODIFIED="1557812626749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
-    <SUITE FILE_PATH="coverage/TensorGraph$im2col_test.coverage" NAME="im2col_test Coverage Results" MODIFIED="1556960080383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
-    <SUITE FILE_PATH="coverage/TensorGraph$perceptron.coverage" NAME="perceptron Coverage Results" MODIFIED="1559802500920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
-    <SUITE FILE_PATH="coverage/TensorGraph$nn_test.coverage" NAME="nn_test Coverage Results" MODIFIED="1556881285365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
-    <SUITE FILE_PATH="coverage/TensorGraph$loss.coverage" NAME="loss Coverage Results" MODIFIED="1559805100264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part3" />
-    <SUITE FILE_PATH="coverage/TensorGraph$test_perception.coverage" NAME="test_perception Coverage Results" MODIFIED="1555912785126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part2" />
     <SUITE FILE_PATH="coverage/TensorGraph$test_graph.coverage" NAME="test_graph Coverage Results" MODIFIED="1556074021489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part1" />
     <SUITE FILE_PATH="coverage/TensorGraph$train.coverage" NAME="train Coverage Results" MODIFIED="1555999794249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
-    <SUITE FILE_PATH="coverage/TensorGraph$mlp__1_.coverage" NAME="mlp (1) Coverage Results" MODIFIED="1556090368380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part5" />
-    <SUITE FILE_PATH="coverage/TensorGraph$test_criterion__1_.coverage" NAME="test_criterion (1) Coverage Results" MODIFIED="1556085199336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part3" />
-    <SUITE FILE_PATH="coverage/TensorGraph$cg.coverage" NAME="cg Coverage Results" MODIFIED="1559786036484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part1" />
-    <SUITE FILE_PATH="coverage/TensorGraph$nn.coverage" NAME="nn Coverage Results" MODIFIED="1556889749614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
-    <SUITE FILE_PATH="coverage/TensorGraph$session.coverage" NAME="session Coverage Results" MODIFIED="1559721891777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
-    <SUITE FILE_PATH="coverage/TensorGraph$grad.coverage" NAME="grad Coverage Results" MODIFIED="1559805700610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part4" />
-    <SUITE FILE_PATH="coverage/TensorGraph$operations.coverage" NAME="operations Coverage Results" MODIFIED="1559787943596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
-    <SUITE FILE_PATH="coverage/TensorGraph$mlp_tf.coverage" NAME="mlp_tf Coverage Results" MODIFIED="1556088732846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part6" />
+    <SUITE FILE_PATH="coverage/TensorGraph$im2col_stride.coverage" NAME="im2col_stride Coverage Results" MODIFIED="1557812626749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
+    <SUITE FILE_PATH="coverage/TensorGraph$loss.coverage" NAME="loss Coverage Results" MODIFIED="1559827893380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part3" />
+    <SUITE FILE_PATH="coverage/TensorGraph$test_grad.coverage" NAME="test_grad Coverage Results" MODIFIED="1555926536632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part4" />
+    <SUITE FILE_PATH="coverage/TensorGraph$conv_test.coverage" NAME="conv_test Coverage Results" MODIFIED="1556963792448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
     <SUITE FILE_PATH="coverage/TensorGraph$graph.coverage" NAME="graph Coverage Results" MODIFIED="1559720231826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
     <SUITE FILE_PATH="coverage/TensorGraph$setup.coverage" NAME="setup Coverage Results" MODIFIED="1556875401730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph/common" />
-    <SUITE FILE_PATH="coverage/TensorGraph$perception.coverage" NAME="perception Coverage Results" MODIFIED="1559808685319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
+    <SUITE FILE_PATH="coverage/TensorGraph$grad.coverage" NAME="grad Coverage Results" MODIFIED="1559829563405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part4" />
+    <SUITE FILE_PATH="coverage/TensorGraph$TestGraph.coverage" NAME="TestGraph Coverage Results" MODIFIED="1555899317133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1" />
+    <SUITE FILE_PATH="coverage/TensorGraph$mlp.coverage" NAME="mlp Coverage Results" MODIFIED="1556001100941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part4" />
+    <SUITE FILE_PATH="coverage/TensorGraph$test_criterion__1_.coverage" NAME="test_criterion (1) Coverage Results" MODIFIED="1556085199336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part3" />
+    <SUITE FILE_PATH="coverage/TensorGraph$mlp__1_.coverage" NAME="mlp (1) Coverage Results" MODIFIED="1556090368380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part5" />
+    <SUITE FILE_PATH="coverage/TensorGraph$test_perception.coverage" NAME="test_perception Coverage Results" MODIFIED="1555912785126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part2" />
+    <SUITE FILE_PATH="coverage/TensorGraph$nn_test.coverage" NAME="nn_test Coverage Results" MODIFIED="1556881285365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
+    <SUITE FILE_PATH="coverage/TensorGraph$nn.coverage" NAME="nn Coverage Results" MODIFIED="1556889749614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
+    <SUITE FILE_PATH="coverage/TensorGraph$operations.coverage" NAME="operations Coverage Results" MODIFIED="1559787943596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
+    <SUITE FILE_PATH="coverage/TensorGraph$session.coverage" NAME="session Coverage Results" MODIFIED="1559721891777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorgraph" />
+    <SUITE FILE_PATH="coverage/TensorGraph$mlp_tf.coverage" NAME="mlp_tf Coverage Results" MODIFIED="1556088732846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part6" />
+    <SUITE FILE_PATH="coverage/TensorGraph$perceptron.coverage" NAME="perceptron Coverage Results" MODIFIED="1559802500920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part2" />
+    <SUITE FILE_PATH="coverage/TensorGraph$cg.coverage" NAME="cg Coverage Results" MODIFIED="1559786036484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part1" />
+    <SUITE FILE_PATH="coverage/TensorGraph$im2col_test.coverage" NAME="im2col_test Coverage Results" MODIFIED="1556960080383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/part7" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/part1/__init__.py" />
@@ -576,26 +575,6 @@
     <entry file="file://$PROJECT_DIR$/tensorgraph/Placeholder.py" />
     <entry file="file://$PROJECT_DIR$/examples/__init__.py" />
     <entry file="file://$PROJECT_DIR$/README-CN.md" />
-    <entry file="file://$PROJECT_DIR$/README-EN.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="77">
-            <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="336">
-            <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Robot/tfenv/lib/python3.7/site-packages/tensorflow/_api/v1/nn/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/build/temp.macosx-10.14-x86_64-3.7/cutil.o" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/common/tensorgraph/common/cutil.so" />
@@ -685,13 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py" />
     <entry file="file://$PROJECT_DIR$/tensorgraph/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -726,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part3/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorgraph/graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -743,36 +706,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part4/grad.py">
+    <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="560">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="88" column="45" lean-forward="true" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1417">
-          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorgraph/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="221">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -780,23 +726,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README-EN.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="77">
+            <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="336">
+            <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tensorgraph/operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="488">
+          <caret line="96" column="45" lean-forward="true" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/part2/perception.py">
+    <entry file="file://$PROJECT_DIR$/examples/part3/loss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="467">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/part4/grad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorgraph/gradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="167" column="33" lean-forward="true" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
         </state>
       </provider>
     </entry>

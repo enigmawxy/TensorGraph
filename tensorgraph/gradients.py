@@ -85,7 +85,7 @@ def _sigmoid_gradient(op, grad):
       Gradients with respect to the input of `sigmoid`.
     """
 
-    sigmoid = op.output
+    sigmoid = op.output_value
 
     return grad * sigmoid * (1 - sigmoid)
 
@@ -102,7 +102,7 @@ def _softmax_gradient(op, grad):
       Gradients with respect to the input of `softmax`.
     """
 
-    softmax = op.output
+    softmax = op.output_value
     return (grad - np.reshape(
         np.sum(grad * softmax, 1),
         [-1, 1]
@@ -153,7 +153,6 @@ def _reduce_sum_gradient(op, grad):
     Returns:
       Gradients with respect to the input of `reduce_sum`.
     """
-    print(type(op), op)
     A = op.inputs[0]
 
     output_shape = np.array(A.shape)

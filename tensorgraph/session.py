@@ -1,5 +1,5 @@
 from tensorgraph.graph import Operation
-from tensorgraph.graph import Placeholder
+from tensorgraph.graph import Placeholder, Variable
 
 
 class Session:
@@ -21,7 +21,10 @@ class Session:
 
             if type(node) == Placeholder:
                 node.output_value = feed_dict[node]
+            elif type(node) == Variable:
+                node.output_value = node.value
             else:
+                node.inputs = [input_node.output_value for input_node in node.input_nodes]
                 node.compute()
 
         return operation.output_value

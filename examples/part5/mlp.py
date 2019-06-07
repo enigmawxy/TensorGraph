@@ -6,23 +6,19 @@ if __name__ == '__main__':
     np.random.seed(10)
     # Create two clusters of red points centered at (0, 0) and (1, 1), respectively.
     red_points = np.concatenate((
-        0.2 * np.random.randn(25, 2) + np.array([[0, 0]] * 25),
-        0.2 * np.random.randn(25, 2) + np.array([[1, 1]] * 25)
-    ))
+        0.2 * np.random.randn(25, 2) + np.array([[0, 0]] * 25), 0.2 * np.random.randn(25, 2) + np.array([[1, 1]] * 25)))
 
     # Create two clusters of blue points centered at (0, 1) and (1, 0), respectively.
     blue_points = np.concatenate((
-        0.2 * np.random.randn(25, 2) + np.array([[0, 1]] * 25),
-        0.2 * np.random.randn(25, 2) + np.array([[1, 0]] * 25)
-    ))
+        0.2 * np.random.randn(25, 2) + np.array([[0, 1]] * 25), 0.2 * np.random.randn(25, 2) + np.array([[1, 0]] * 25)))
 
     # Plot the red and blue points
     ax = plt.gca()
     ax.set_title('Scatter Dataset')
     ax.spines['right'].set_color('none')
     ax.spines['top'].set_color('none')
-    plt.scatter(red_points[:,0], red_points[:,1], color='red')
-    plt.scatter(blue_points[:,0], blue_points[:,1], color='blue')
+    plt.scatter(red_points[:, 0], red_points[:, 1], color='red')
+    plt.scatter(blue_points[:, 0], blue_points[:, 1], color='blue')
     plt.show()
 
     # Create a new graph
@@ -51,11 +47,8 @@ if __name__ == '__main__':
     minimization_op = tg.train.GradientDescentOptimizer(learning_rate=0.03).minimize(J)
 
     # Build placeholder inputs
-    feed_dict = {
-        X: np.concatenate((blue_points, red_points)),
-        c:
-            [[1, 0]] * len(blue_points)
-            + [[0, 1]] * len(red_points)
+    feed_dict = {X: np.concatenate((blue_points, red_points)),
+        c: [[1, 0]] * len(blue_points) + [[0, 1]] * len(red_points)
 
     }
 
@@ -90,8 +83,7 @@ if __name__ == '__main__':
     pred_classes = []
     for x in xs:
         for y in ys:
-            pred_class = session.run(p_output,
-                                     feed_dict={X: [[x, y]]})[0]
+            pred_class = session.run(p_output, feed_dict={X: [[x, y]]})[0]
             pred_classes.append((x, y, pred_class.argmax()))
     xs_p, ys_p = [], []
     xs_n, ys_n = [], []
